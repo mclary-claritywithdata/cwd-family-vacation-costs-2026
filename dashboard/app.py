@@ -22,6 +22,9 @@ st.set_page_config(
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data"
 
+ASSETS_DIR = BASE_DIR / "dashboard" / "assets"
+logo_file = ASSETS_DIR / "cwd_logo.png"
+
 
 def find_existing_file(*filenames):
     """
@@ -246,11 +249,19 @@ if "source_key" in gas_df.columns:
 # PAGE HEADER
 # =========================================================
 
-st.title("What Does a Family Vacation Cost in 2026?")
-st.caption(
-    "A Clarity With Data interactive project | "
-    "Where Insight Meets Intention"
-)
+left, right = st.columns([6, 1])
+
+with left:
+    st.title("What Does a Family Vacation Cost in 2026?")
+
+    st.caption(
+        "A Clarity With Data interactive project | "
+        "Where Insight Meets Intention"
+    )
+
+with right:
+    if logo_file.exists():
+        st.image(logo_file, width=110)
 
 st.markdown(
     """
@@ -263,6 +274,27 @@ st.markdown(
     cost of a family vacation.
     """
 )
+
+# =========================================================
+# SIDEBAR BRANDING
+# =========================================================
+
+with st.sidebar:
+    st.markdown("### Clarity With Data")
+
+    st.write(
+        "Helping organizations transform data into "
+        "actionable insights."
+    )
+
+    st.link_button(
+        "Visit Website",
+        "https://www.claritywithdata.com",
+        use_container_width=True,
+    )
+    """
+    Return the first matching file found in the data directory.
+    """
 
 
 # =========================================================
