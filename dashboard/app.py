@@ -12,7 +12,8 @@ st.set_page_config(
 
 #FILE PATHS
 
-BASE_DIR = Path.cwd()
+BASE_DIR = Path.(__file__).resolve().parent.parent
+DATA_DIR = BASE_DIR / "data"
 
 budget_file = BASE_DIR / "vacation_budget_simulator.xlsx"
 gas_file = BASE_DIR / "gas_summary.xlsx"
@@ -51,21 +52,7 @@ st.set_page_config(
     layout="wide"
 )
 
-#FILE PATHS
 
-BASE_DIR = Path.cwd()
-
-budget_file = BASE_DIR / "vacation_budget_simulator.xlsx"
-gas_file = BASE_DIR / "gas_summary.xlsx"
-
-
-#LOAD DATA
-
-budget_df = pd.read_excel(budget_file)
-
-gas_df = pd.read_excel(gas_file)
-
- 
 
 #PAGE CONTENT
 
