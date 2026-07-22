@@ -247,6 +247,10 @@ if "source_key" in gas_df.columns:
 # =========================================================
 
 st.title("What Does a Family Vacation Cost in 2026?")
+st.caption(
+    "A Clarity With Data interactive project | "
+    "Where Insight Meets Intention"
+)
 
 st.markdown(
     """
@@ -1140,8 +1144,39 @@ with methodology_tab:
 # FOOTER
 # =========================================================
 
+# =========================================================
+# FOOTER
+# =========================================================
+
 st.divider()
 
-st.caption(
-    "Clarity With Data | Where Insight Meets Intention"
+st.markdown(
+    """
+    <div style="
+        text-align: center;
+        padding: 12px 0 20px 0;
+        line-height: 1.7;
+    ">
+        <strong>Clarity With Data</strong><br>
+        <em>Where Insight Meets Intention</em><br><br>
+
+        Explore more data projects, services, and insights at
+        <a
+            href="https://www.claritywithdata.com"
+            target="_blank"
+        >
+            claritywithdata.com
+        </a>
+        <br>
+
+        Questions or collaboration opportunities?
+        <a
+            href="https://www.claritywithdata.com/contact"
+            target="_blank"
+        >
+            Connect with Clarity With Data
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True,
 )
