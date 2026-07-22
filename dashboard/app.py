@@ -1144,39 +1144,28 @@ with methodology_tab:
 # FOOTER
 # =========================================================
 
-# =========================================================
-# FOOTER
-# =========================================================
-
 st.divider()
 
 st.markdown(
     """
-    <div style="
-        text-align: center;
-        padding: 12px 0 20px 0;
-        line-height: 1.7;
-    ">
-        <strong>Clarity With Data</strong><br>
-        <em>Where Insight Meets Intention</em><br><br>
+<div style="text-align:center; line-height:1.8;">
+    <strong>Clarity With Data</strong><br>
+    <em>Where Insight Meets Intention</em><br><br>
 
-        Explore more data projects, services, and insights at
-        <a
-            href="https://www.claritywithdata.com"
-            target="_blank"
-        >
-            claritywithdata.com
-        </a>
-        <br>
+    Explore more data projects, services, and insights at<br>
 
-        Questions or collaboration opportunities?
-        <a
-            href="https://www.claritywithdata.com/contact"
-            target="_blank"
-        >
-            Connect with Clarity With Data
-        </a>
-    </div>
-    """,
+    <a href="https://www.claritywithdata.com" target="_blank">
+        claritywithdata.com
+    </a>
+
+    <br><br>
+
+    Questions or collaboration opportunities?<br>
+
+    <a href="https://www.claritywithdata.com/contact" target="_blank">
+        Connect with Clarity With Data
+    </a>
+</div>
+""",
     unsafe_allow_html=True,
 )
