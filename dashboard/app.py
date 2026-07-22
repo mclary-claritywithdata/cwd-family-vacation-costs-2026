@@ -52,6 +52,26 @@ gas_file = DATA_DIR / "gas_summary.xlsx"
 tsa_file = DATA_DIR / "tsa_summary.xlsx"
 bls_file = DATA_DIR / "bls_summary.xlsx"
 
+# =========================================================
+# SIDEBAR BRANDING
+# =========================================================
+
+with st.sidebar:
+    st.markdown("## Clarity With Data")
+
+    st.caption("Where Insight Meets Intention")
+
+    st.write(
+        "Helping organizations transform data into "
+        "actionable insights."
+    )
+
+    st.link_button(
+        "Visit Website",
+        "https://www.claritywithdata.com",
+        use_container_width=True,
+    )
+
 
 # =========================================================
 # LOAD DATA
@@ -274,28 +294,6 @@ st.markdown(
     cost of a family vacation.
     """
 )
-
-# =========================================================
-# SIDEBAR BRANDING
-# =========================================================
-
-with st.sidebar:
-    st.markdown("### Clarity With Data")
-
-    st.write(
-        "Helping organizations transform data into "
-        "actionable insights."
-    )
-
-    st.link_button(
-        "Visit Website",
-        "https://www.claritywithdata.com",
-        use_container_width=True,
-    )
-    """
-    Return the first matching file found in the data directory.
-    """
-
 
 # =========================================================
 # NAVIGATION
