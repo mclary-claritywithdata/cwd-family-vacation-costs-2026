@@ -1144,28 +1144,62 @@ with methodology_tab:
 # FOOTER
 # =========================================================
 
+# =========================================================
+# FOOTER
+# =========================================================
+
 st.divider()
 
-st.markdown(
+st.html(
     """
-<div style="text-align:center; line-height:1.8;">
-    <strong>Clarity With Data</strong><br>
-    <em>Where Insight Meets Intention</em><br><br>
+    <div style="
+        text-align: center;
+        padding: 18px 10px 28px 10px;
+        line-height: 1.8;
+    ">
+        <div style="font-size: 1.1rem; font-weight: 700;">
+            Clarity With Data
+        </div>
 
-    Explore more data projects, services, and insights at<br>
+        <div style="font-style: italic; margin-bottom: 18px;">
+            Where Insight Meets Intention
+        </div>
 
-    <a href="https://www.claritywithdata.com" target="_blank">
-        claritywithdata.com
-    </a>
+        <div>
+            Explore more data projects, services, and insights at
+        </div>
 
-    <br><br>
+        <div style="margin-bottom: 16px;">
+            <a
+                href="https://www.claritywithdata.com"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                claritywithdata.com
+            </a>
+        </div>
 
-    Questions or collaboration opportunities?<br>
+        <div>
+            Questions or collaboration opportunities?
+        </div>
 
-    <a href="https://www.claritywithdata.com/contact" target="_blank">
-        Connect with Clarity With Data
-    </a>
-</div>
-""",
-    unsafe_allow_html=True,
+        <div>
+            <a
+                href="https://www.claritywithdata.com/contact"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Connect with Clarity With Data
+            </a>
+        </div>
+
+        <div style="
+            margin-top: 20px;
+            font-size: 0.82rem;
+            opacity: 0.75;
+        ">
+            © 2026 Clarity With Data
+        </div>
+    </div>
+    """
 )
