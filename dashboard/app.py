@@ -27,7 +27,7 @@ def load_data():
     budget_df = pd.read_excel(budget_file)
     gas_df = pd.read_excel(gas_file)
 
-    return budget, gas
+    return budget_df, gas_df
 
 try:
     budget_df, gas_df = load_data()
