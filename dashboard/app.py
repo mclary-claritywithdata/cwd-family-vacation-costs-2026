@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data"
 
 # This matches the current filename in GitHub.
-budget_file = DATA_DIR / "vacation_budget_simulater.xlsx"
+budget_file = DATA_DIR / "vacation_budget_simulator.xlsx"
 gas_file = DATA_DIR / "gas_summary.xlsx"
 
 
